@@ -45,6 +45,10 @@
       font-size: 20px;
     }
 
+    nav a:hover {
+      background-color: #999;
+    }
+
     /* Child selector */
     header > a {
       text-decoration: none;
@@ -198,11 +202,12 @@
 
         <p class="login-text">Please log in</p>
 
-        <form>
+        <form action="index.html">
 
           <input
             type="email"
             placeholder="Email"
+            required
           >
 
           <br>
@@ -210,6 +215,7 @@
           <input
             type="password"
             placeholder="Password"
+            required
           >
 
           <br>
