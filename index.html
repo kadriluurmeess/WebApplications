@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Avaleht - index.html</title>
+
   <style>
     * {
       box-sizing: border-box;
@@ -20,13 +21,14 @@
       min-height: 100vh;
     }
 
-
     header {
       background-color: #c9cdd2;
       padding: 12px 24px;
+
       display: flex;
       justify-content: space-between;
       align-items: center;
+
       border-radius: 8px 8px 0 0;
       margin: 10px 20px 0 20px;
     }
@@ -46,19 +48,22 @@
     .user-avatar {
       width: 38px;
       height: 38px;
+
       background-color: #fff;
       border-radius: 50%;
+
       display: inline-flex;
       align-items: center;
       justify-content: center;
+
       text-decoration: none;
       font-size: 20px;
     }
 
-  
     .main-container {
       display: flex;
       flex: 1;
+
       margin: 0 20px;
       gap: 15px;
     }
@@ -71,20 +76,25 @@
 
     .feed {
       flex: 2;
+
       display: flex;
       flex-direction: column;
+
       gap: 20px;
       padding: 15px 0;
     }
 
- 
     .post-card {
       background-color: #d8dbe0;
+
       border-radius: 8px;
       padding: 14px;
+
       display: flex;
       flex-direction: column;
+
       gap: 10px;
+
       box-shadow: 0 1px 3px rgba(0,0,0,0.1);
     }
 
@@ -97,11 +107,14 @@
     .post-author-icon {
       width: 32px;
       height: 32px;
+
       background-color: #fff;
       border-radius: 50%;
+
       display: flex;
       align-items: center;
       justify-content: center;
+
       font-size: 16px;
     }
 
@@ -113,7 +126,9 @@
     .post-image {
       width: 100%;
       max-height: 320px;
+
       object-fit: cover;
+
       border-radius: 6px;
     }
 
@@ -125,10 +140,14 @@
     .like-btn {
       background: none;
       border: none;
+
       font-size: 22px;
+
       cursor: pointer;
+
       width: fit-content;
       line-height: 1;
+
       transition: transform 0.1s ease;
     }
 
@@ -136,60 +155,152 @@
       transform: scale(1.15);
     }
 
-
     footer {
       background-color: #c9cdd2;
+
       text-align: center;
+
       padding: 14px;
+
       font-size: 16px;
       font-weight: 500;
+
       border-radius: 0 0 8px 8px;
+
       margin: 0 20px 10px 20px;
+    }
+
+    /* Telefonivaade */
+    @media (max-width: 600px) {
+
+      header {
+        margin: 5px;
+        padding: 10px;
+      }
+
+      .main-container {
+        margin: 0 5px;
+      }
+
+      .sidebar {
+        display: none;
+      }
+
+      .feed {
+        width: 100%;
+      }
+
+      footer {
+        margin: 0 5px 5px 5px;
+      }
     }
   </style>
 </head>
+
 <body>
 
- 
   <header>
+
     <nav>
       <a href="index.html">Home</a>
+
       <span>|</span>
+
       <a href="addPost.html">addPost</a>
     </nav>
-    <a href="login.html" class="user-avatar" title="Logi sisse">👤</a>
+
+    <a
+      href="login.html"
+      class="user-avatar"
+      title="Logi sisse"
+    >
+      👤
+    </a>
+
   </header>
 
 
   <div class="main-container">
+
     <aside class="sidebar"></aside>
 
     <main class="feed">
-   
+
+
+      <!-- Postitus 1 -->
+
       <article class="post-card">
+
         <div class="post-header">
-          <div class="post-author-icon">👤</div>
-          <span class="post-date">Oct 22, 2022</span>
+
+          <div class="post-author-icon">
+            👤
+          </div>
+
+          <span class="post-date">
+            Oct 22, 2022
+          </span>
+
         </div>
-      
-        <img class="post-image" src="https://www.tahititourisme.fr/app/uploads/2023/08/la-mythique-vague-de-teahupoo-a-steve-dickinson.webp" alt="Surfing in Tahiti">
-        <p class="post-caption">Tahiti Surfing</p>
-        <button class="like-btn" type="button" title="Like">👍</button>
+
+        <img
+          class="post-image"
+          src="https://www.tahititourisme.fr/app/uploads/2023/08/la-mythique-vague-de-teahupoo-a-steve-dickinson.webp"
+          alt="Surfing in Tahiti"
+        >
+
+        <p class="post-caption">
+          Tahiti Surfing
+        </p>
+
+        <button
+          class="like-btn"
+          type="button"
+          title="Like"
+        >
+          👍
+        </button>
+
       </article>
 
-    
+
+      <!-- Postitus 2 -->
+
       <article class="post-card">
+
         <div class="post-header">
-          <div class="post-author-icon">👤</div>
-          <span class="post-date">Oct 1, 2026</span>
+
+          <div class="post-author-icon">
+            👤
+          </div>
+
+          <span class="post-date">
+            Oct 1, 2026
+          </span>
+
         </div>
-        <p class="post-caption">Sick waves my dude!</p>
-        <button class="like-btn" type="button" title="Like">👍</button>
+
+        <p class="post-caption">
+          Sick waves my dude!
+        </p>
+
+        <button
+          class="like-btn"
+          type="button"
+          title="Like"
+        >
+          👍
+        </button>
+
       </article>
+
+
     </main>
 
     <aside class="sidebar"></aside>
+
   </div>
+
 
   <footer>
     Footer

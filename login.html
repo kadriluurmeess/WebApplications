@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - login.html</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+      color: #222;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 530px;
+      height: 525px;
+      margin: 28px auto 0;
+      border: 2px dashed #888;
+      border-radius: 12px;
+    }
+
+    header {
+      height: 60px;
+      background-color: #bdbdbd;
+      border-radius: 12px 12px 0 0;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding-left: 20px;
+    }
+
+    header a {
+      text-decoration: none;
+      color: black;
+      font-size: 20px;
+    }
+
+    /* Child selector */
+    header > a {
+      text-decoration: none;
+    }
+
+    .user-avatar {
+      width: 55px;
+      height: 55px;
+      margin-right: 8px;
+
+      background-color: white;
+      color: #aaa;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-size: 38px;
+      text-decoration: none;
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+    }
+
+    .login-box {
+      width: 280px;
+      height: 315px;
+      margin-top: 28px;
+
+      background-color: #d6d6d6;
+      border-radius: 12px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      padding: 16px;
+      font-family: monospace;
+    }
+
+    .login-box h2 {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .login-box a {
+      color: #00aef3;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .or-text {
+      margin-top: 8px;
+      font-size: 17px;
+    }
+
+    .login-text {
+      margin-bottom: 10px;
+      font-size: 17px;
+    }
+
+    /* Adjacent sibling selector */
+    .or-text + .login-text {
+      margin-top: 0;
+    }
+
+    /* General sibling selector */
+    .login-text ~ form {
+      margin-top: 0;
+    }
+
+    input {
+      width: 125px;
+      height: 36px;
+      margin-bottom: 9px;
+
+      border: 1px solid #ddd;
+      padding: 6px;
+
+      font-family: monospace;
+      font-size: 16px;
+    }
+
+    input::placeholder {
+      color: #bbb;
+    }
+
+    .login-button {
+      background-color: #24558b;
+      color: white;
+
+      border: none;
+      padding: 6px 12px;
+
+      margin-top: 4px;
+      margin-bottom: 16px;
+
+      font-family: monospace;
+      font-size: 16px;
+
+      cursor: pointer;
+    }
+
+    .login-button:hover {
+      background-color: #1c4470;
+    }
+
+    /* Telefonivaade */
+    @media (max-width: 600px) {
+      .container {
+        width: 95%;
+        height: auto;
+        min-height: 500px;
+        margin: 20px auto;
+      }
+
+      .login-box {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header>
+
+      <nav>
+        <a href="index.html">Home</a>
+      </nav>
+
+      <a href="login.html" class="user-avatar">
+        👤
+      </a>
+
+    </header>
+
+    <main>
+
+      <div class="login-box">
+
+        <h2>Welcome to PostIt</h2>
+
+        <a href="signup.html">Create an account</a>
+
+        <p class="or-text">or</p>
+
+        <p class="login-text">Please log in</p>
+
+        <form>
+
+          <input
+            type="email"
+            placeholder="Email"
+          >
+
+          <br>
+
+          <input
+            type="password"
+            placeholder="Password"
+          >
+
+          <br>
+
+          <div style="text-align: center;">
+
+            <button
+              type="submit"
+              class="login-button"
+            >
+              Log in
+            </button>
+
+          </div>
+
+        </form>
+
+        <a href="#">Forget password</a>
+
+      </div>
+
+    </main>
+
+  </div>
+
+</body>
+</html>

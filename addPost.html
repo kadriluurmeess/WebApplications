@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add post - addPost.html</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f5f7;
+      color: #333;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 490px;
+      height: 485px;
+      margin: 70px auto 0;
+      border: 2px dashed #888;
+      border-radius: 12px;
+    }
+
+    header {
+      height: 55px;
+      background-color: #bdbdbd;
+      border-radius: 12px 12px 0 0;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding-left: 18px;
+    }
+
+    header a {
+      text-decoration: none;
+      color: #222;
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .user-avatar {
+      width: 45px;
+      height: 45px;
+      margin-right: 8px;
+
+      background-color: white;
+      color: #aaa;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      font-size: 32px;
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+    }
+
+    .post-form {
+      width: 260px;
+      height: 250px;
+      margin-top: 48px;
+
+      background-color: #d6d6d6;
+      border-radius: 12px;
+
+      padding: 20px;
+
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .form-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    label {
+      width: 60px;
+      text-align: right;
+      font-family: monospace;
+      font-size: 16px;
+    }
+
+    textarea {
+      width: 158px;
+      height: 88px;
+      resize: none;
+      border: 1px solid #ddd;
+      font-size: 15px;
+      padding: 4px;
+    }
+
+    input[type="file"] {
+      width: 160px;
+    }
+
+    input[type="file"]::file-selector-button {
+      background-color: #777;
+      color: white;
+      border: 1px solid #444;
+      padding: 4px 10px;
+      cursor: pointer;
+    }
+
+    .create-button {
+      align-self: center;
+
+      background-color: #24558b;
+      color: white;
+
+      border: none;
+      padding: 8px 12px;
+
+      font-family: monospace;
+      font-size: 16px;
+
+      cursor: pointer;
+    }
+
+    .create-button:hover {
+      background-color: #1c4470;
+    }
+
+    /* Telefonivaade */
+    @media (max-width: 600px) {
+      .container {
+        width: 95%;
+        height: auto;
+        min-height: 450px;
+        margin: 20px auto;
+      }
+
+      .post-form {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header>
+
+      <nav>
+        <a href="index.html">Home</a>
+      </nav>
+
+      <a href="login.html" class="user-avatar">
+        👤
+      </a>
+
+    </header>
+
+    <main>
+
+      <form class="post-form">
+
+        <div class="form-row">
+          <label for="postBody">
+            Post<br>body
+          </label>
+
+          <textarea
+            id="postBody"
+            name="postBody"
+            placeholder="textarea"
+          ></textarea>
+        </div>
+
+        <div class="form-row">
+          <label for="file">
+            Select<br>file
+          </label>
+
+          <input
+            type="file"
+            id="file"
+            name="file"
+          >
+        </div>
+
+        <button
+          class="create-button"
+          type="submit"
+        >
+          Create post
+        </button>
+
+      </form>
+
+    </main>
+
+  </div>
+
+</body>
+</html>
