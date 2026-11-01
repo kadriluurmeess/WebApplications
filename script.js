@@ -67,9 +67,13 @@ async function loadPosts() {
   const feed = document.getElementById("feed");
 
   try {
-    const response = await fetch(
-      "https://raw.githubusercontent.com/kadriluurmeess/WebApplications/main/posts.json"
-    );
+    // 4. ülesanne: postituste laadimine veebiaadressilt.
+    // const response = await fetch(
+    //   "https://raw.githubusercontent.com/kadriluurmeess/WebApplications/main/posts.json"
+    // );
+
+    // 5. ülesanne: postituste laadimine projekti JSON-failist.
+    const response = await fetch("./posts.json");
 
     if (!response.ok) {
       throw new Error("HTTP error: " + response.status);
