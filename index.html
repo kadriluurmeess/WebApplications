@@ -17,9 +17,20 @@
       <a href="addPost.html">addPost</a>
     </nav>
 
-    <a href="login.html" class="user-avatar" title="Logi sisse">
-      👤
-    </a>
+    <!--ülesanne 7: Dropdown menüü profiilipildi klikkimisel-->
+    <div class="profile-container">
+      <div class="user-avatar" id="profile-pic" title="Profile">
+        👤
+      </div>
+      
+      <!-- Rippmenüü (alguses peidetud klassiga 'hidden') -->
+      <div id="dropdown-menu" class="dropdown-menu hidden">
+        <p class="dropdown-name">Surfar Siim</p>
+        <p class="dropdown-email">surfar.siim@ut.ee</p>
+        <hr class="dropdown-divider">
+        <a href="login.html" class="dropdown-logout">Logout</a>
+      </div>
+    </div>
   </header>
 
   <div class="main-container">

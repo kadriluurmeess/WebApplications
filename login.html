@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login - login.html</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body class="form-page login-page">
@@ -12,14 +13,26 @@
   <div class="container">
 
     <header>
-      <nav>
-        <a href="index.html">Home</a>
-      </nav>
+    <nav>
+      <a href="index.html">Home</a>
+      <span>|</span>
+      <a href="addPost.html">addPost</a>
+    </nav>
 
-      <a href="login.html" class="user-avatar">
+    <div class="profile-container">
+      <div class="user-avatar" id="profile-pic" title="Profile">
         👤
-      </a>
-    </header>
+      </div>
+      <!--ülesanne 7: Dropdown menüü profiilipildi klikkimisel-->
+      <!-- Rippmenüü (alguses peidetud klassiga 'hidden') -->
+      <div id="dropdown-menu" class="dropdown-menu hidden">
+        <p class="dropdown-name">Surfar Siim</p>
+        <p class="dropdown-email">surfar.siim@ut.ee</p>
+        <hr class="dropdown-divider">
+        <a href="login.html" class="dropdown-logout">Logout</a>
+      </div>
+    </div>
+  </header>
 
     <main>
 

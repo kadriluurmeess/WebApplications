@@ -367,6 +367,65 @@ nav a:hover {
   margin-top: 4px;
   margin-bottom: 16px;
 }
+/*ülesanne 7:Dropdown menüü stiilid*/
+/* Profiili konteiner ja rippmenüü stiilid */
+.profile-container {
+  position: relative;
+  display: inline-block;
+}
+
+.user-avatar {
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 0;
+  top: 45px;
+  background-color: #d3d3d3; /* Hall taust nagu juhendi joonisel 3 */
+  min-width: 160px;
+  padding: 12px;
+  border-radius: 6px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  font-family: Arial, sans-serif;
+  text-align: left;
+}
+
+.dropdown-menu.hidden {
+  display: none;
+}
+
+.dropdown-name {
+  font-weight: bold;
+  font-size: 14px;
+  color: #222;
+  margin-bottom: 4px;
+}
+
+.dropdown-email {
+  font-size: 13px;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+.dropdown-divider {
+  border: none;
+  border-top: 1px solid #aaa;
+  margin: 6px 0;
+}
+
+.dropdown-logout {
+  color: #d9534f;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+}
+
+.dropdown-logout:hover {
+  text-decoration: underline;
+}
 
 /* Telefonivaade */
 @media (max-width: 600px) {

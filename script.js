@@ -95,3 +95,23 @@ async function loadPosts() {
 }
 
 loadPosts();
+
+//ülesanne 7: dropdown menüü avamine ja sulgemine 
+// Rippmenüü avamise ja sulgemise loogika
+const profilePic = document.getElementById('profile-pic');
+const dropdownMenu = document.getElementById('dropdown-menu');
+
+if (profilePic && dropdownMenu) {
+  profilePic.addEventListener('click', (event) => {
+    // Hoiab ära sündmuse mullistumise, et klikk ei sulgeks menüüd koheselt
+    event.stopPropagation();
+    dropdownMenu.classList.toggle('hidden');
+  });
+
+  // Kui klikitakse kuskil mujal lehel, suletakse menüü
+  window.addEventListener('click', () => {
+    if (!dropdownMenu.classList.contains('hidden')) {
+      dropdownMenu.classList.add('hidden');
+    }
+  });
+}
