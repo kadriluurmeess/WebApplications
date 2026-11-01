@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "author": "Mari",
+    "createdAt": "2026-10-22T14:30:00Z",
+    "text": "Tahiti Surfing",
+    "image": "https://www.tahititourisme.fr/app/uploads/2023/08/la-mythique-vague-de-teahupoo-a-steve-dickinson.webp",
+    "imageAlt": "Surfing in Tahiti"
+  },
+  {
+    "id": 2,
+    "author": "Karl",
+    "createdAt": "2026-10-21T10:15:00Z",
+    "text": "Sick waves my dude!",
+    "image": null,
+    "imageAlt": ""
+  },
+  {
+    "id": 3,
+    "author": "Laura",
+    "createdAt": "2026-10-20T16:45:00Z",
+    "text": "Surfing in Indonesia",
+    "image": "https://www.thetimes.com/imageserver/image/771f8499-aab8-47da-ac0b-4c976b09b154.jpg?strip=all&format=webp&crop=2969px%2C1670px%2C608px%2C361px&resize=2360",
+    "imageAlt": "Surfing in Indonesia"
+  },
+  {
+    "id": 4,
+    "author": "Martin",
+    "createdAt": "2026-10-19T09:00:00Z",
+    "text": "I love surfing. It is very cool.",
+    "image": null,
+    "imageAlt": ""
+  },
+  {
+    "id": 5,
+    "author": "Anna",
+    "createdAt": "2026-10-18T12:20:00Z",
+    "text": "Surfboard broke while surfing...",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxnCtM_kyjeOoYnp1AIQKL_h2DVLV7atyl-1xb4obJow&s=10",
+    "imageAlt": "Surfing incident"
+  },
+  {
+    "id": 6,
+    "author": "Robin",
+    "createdAt": "2026-10-17T08:30:00Z",
+    "text": "Early morning at the beach. Ready to catch some waves!",
+    "image": null,
+    "imageAlt": ""
+  },
+  {
+    "id": 7,
+    "author": "Sandra",
+    "createdAt": "2026-10-16T17:10:00Z",
+    "text": "Finally managed to stand up on my surfboard!",
+    "image": null,
+    "imageAlt": ""
+  },
+  {
+    "id": 8,
+    "author": "Markus",
+    "createdAt": "2026-10-15T13:40:00Z",
+    "text": "Does anyone want to go surfing this weekend?",
+    "image": null,
+    "imageAlt": ""
+  },
+  {
+    "id": 9,
+    "author": "Liisa",
+    "createdAt": "2026-10-14T18:00:00Z",
+    "text": "The best part of my day was watching the sunset after surfing.",
+    "image": null,
+    "imageAlt": ""
+  },
+  {
+    "id": 10,
+    "author": "Rasmus",
+    "createdAt": "2026-10-13T11:25:00Z",
+    "text": "Bought my first surfboard today!",
+    "image": null,
+    "imageAlt": ""
+  }
+]
